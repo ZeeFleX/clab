@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+IFS=$'\n'
+
+FILES=($(git diff --cached --name-only --diff-filter=MACRT))
+
+for i in "${FILES[@]}"
+do
+  if [[ $i =~ "src/" && $i != *.json* ]]; then
+    echo "Lint file $i"
+    echo "------------"
+    ./node_modules/.bin/eslint -c ./.eslintrc.js --fix $i
+  fi
+done
+
+echo "Trying to build project... "
+./node_modules/.bin/tsc --noEmit --project ./tsconfig.json
+echo "OK"

@@ -1,0 +1,47 @@
+@import "../../variables"
+    
+.modal
+    position: relative
+    display: flex
+    flex-direction: column
+    align-self: center
+    box-sizing: border-box
+    width: 500px
+    max-width: 90%
+    background: $secondaryBgColor
+    padding: 60px 50px 50px 50px
+    border-radius: 6px
+    border: solid $secondary 1px
+    transform: scale(0.8)
+    transition: transform 0.3s ease, opacity 0.3s ease
+    opacity: 0
+
+.modal__active
+    transform: scale(1)
+    opacity: 1
+
+.title, .caption
+    text-align: center
+    margin: 5px 0
+    padding: 0
+
+.caption
+    margin-bottom: 30px
+    color: $secondaryTextColor
+
+.closeButton
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 100%
+    background-color: $grey400
+    border: solid $secondary 1px
+    box-sizing: border-box
+    padding: 4px
+    position: absolute
+    right: 10px
+    top: 10px
+    cursor: pointer
+    transition: background-color 0.2s ease
+    &:hover
+        background-color: $grey500

@@ -1,0 +1,28 @@
+@import "../../variables"
+
+.SignUp
+    display: flex
+    justify-content: center
+    .resendCode, .expiredCodeActions
+        display: flex
+        font-size: 14px
+        margin-top: 30px
+        color: $secondaryTextColor
+        justify-content: space-between
+    .resendCode
+        text-align: center
+    .expiredCodeActions
+        span
+            cursor: pointer
+            &:hover 
+                color: $mainTextColor
+    .signupSuccessTitle
+        text-align: center
+    .signupSuccessInfo
+        padding-left: 0
+        list-style: circle
+        color: $secondaryTextColor
+        font-size: 14px
+        line-height: 135%
+        li
+            margin-top: 20px

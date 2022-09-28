@@ -1,0 +1,49 @@
+@import "../../variables"
+    
+.inputWrapper
+    width: 100%
+    background-color: transparent
+    transition: background-color 0.2s ease, border-color 0.2s ease
+    border: solid 1px $grey700
+    border-radius: 18px
+    margin: 10px 0
+    label
+        position: absolute
+        color: $grey800
+        margin-left: 24px
+        margin-top: 20px
+        font-size: 16px
+        transform: none
+        transition: transform 0.2s ease
+        transform-origin: left
+    input
+        position: relative
+        background: none
+        border: none
+        z-index: 1
+        width: 100%
+        box-sizing: border-box
+        padding: 27px 15px 12px 20px
+        color: $mainTextColor
+        font-size: 14px
+        border-radius: 20px
+        &:focus, &:active
+            outline: none
+
+.focusedWrapper
+    background-color: $grey500
+    border-color: $grey800
+    label
+        transform: translateY(-15px) scale(0.8)
+
+.inputError
+    border-color: $error 
+
+.inputMessages
+    margin-top: -7px
+    margin-left: 18px
+.message
+    font-size: 14px
+    margin: 6px 0
+.messageError
+    color: $error

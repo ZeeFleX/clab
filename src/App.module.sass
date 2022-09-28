@@ -1,0 +1,31 @@
+@import "./variables.sass"
+@import "@fontsource/open-sans"
+
+body
+    background-color: $mainBgColor
+    color: $mainTextColor
+    font-family: "Open-sans", sans-serif
+
+.rootWrapper
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+
+.contentContainer
+    width: 1180px
+    max-width: 100%
+    box-sizing: border-box
+    padding: 20px
+    margin: auto
+    display: flex
+    flex: 1
+    flex-direction: column
+    justify-content: flex-start
+
+h1
+    font-size: 20px
+    color: $mainTextColor
+    line-height: 135%
+
+hr
+    border-color: $grey800

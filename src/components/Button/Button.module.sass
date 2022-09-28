@@ -1,0 +1,29 @@
+@import "../../variables"
+    
+.button
+    display: flex
+    padding: 10px 10px
+    cursor: pointer
+    background-color: $primaryButtonBG
+    color: $mainTextColor
+    border: none
+    border-radius: 50px
+    font-weight: 600
+    transition: background-color 0.2s ease
+    align-items: center
+    text-decoration: none
+    justify-content: space-between
+    margin-top: 10px
+    &:hover, &:active
+        background-color: $primaryButtonBG--hover
+    &:disabled
+        background-color: $grey800
+
+.adornment
+    min-width: 32px
+    display: flex
+
+
+.buttonText
+    margin: 0 10px
+        

@@ -1,0 +1,11 @@
+import { format } from 'path'
+
+export * from './email'
+export * from './required'
+export * from './password'
+export * from './phone'
+export * from './age'
+export * from './name'
+export * from './confirmPassword'
+export * from './login'
+export * from './code'
