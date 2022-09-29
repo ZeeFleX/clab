@@ -7,6 +7,6 @@ App will be started on http://localhost
 ```
 yarn
 yarn prepare
-yarn dev
+yarn start
 ```
 So, app will be started on http://localhost:3000
