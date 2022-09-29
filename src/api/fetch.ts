@@ -1,8 +1,14 @@
-import { PORTAL_BASE_URL, TSOFT_BASE_URL, AUTH_HEADER } from 'config'
+import {
+  PORTAL_BASE_URL,
+  TSOFT_BASE_URL,
+  INSTAGRAM_API_BASE_URL,
+  AUTH_HEADER,
+} from 'config'
 
 const services: { [index: string]: string } = {
   portal: PORTAL_BASE_URL,
   tsoft: TSOFT_BASE_URL,
+  instagram: INSTAGRAM_API_BASE_URL,
 }
 
 export const fetchAction = async (
